@@ -1,0 +1,315 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Hack";
+    src: url(/webfonts/Hack-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Hack";
+    src: url(/webfonts/Hack-Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url(/webfonts/Cantarell-Regular.otf);
+}
+
+@font-face {
+    font-family: "Cantarell";
+    src: url(/webfonts/Cantarell-Bold.otf);
+    font-weight: bold;
+}
+
+/* General styles */
+
+body {
+    font-family: "Cantarell", sans-serif;
+    margin: 0 4%;
+    background-color: #232323;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4em;
+    font-size: 18px;
+    -webkit-text-size-adjust: 100%;
+    word-wrap: break-word;
+}
+
+.header {
+    position: relative;
+    top: 0;
+}
+
+.header > h1 {
+    font-family: "Cantarell", sans-serif;
+    font-weight: normal;
+    font-size: 2.2em;
+    line-height: 0.7em;
+    padding-bottom: 0;
+    border-bottom: none;
+    margin-top: 0.7em;
+}
+
+.header > p {
+    position: absolute;
+    bottom: -1.2em;
+    left: 7em;
+}
+
+.header > p > a {
+    margin-left: 1em;
+}
+
+h1 {
+    font-family: "Hack", monospace;
+    font-weight: normal;
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding-bottom: 0.1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1.2em;
+}
+
+h3 {
+    font-size: 1.12em;
+    font-weight: bold;
+    line-height: 1.3em;
+}
+
+h4, h5, h6 {
+    line-height: 1.3em;
+}
+
+:not(pre) > code, pre {
+    background-color: rgba(255, 255, 255, 0.04);
+    font-family: "Hack", monospace;
+}
+
+:not(pre) > code {
+    padding: 0.1em 0.13em 0.07em 0.13em;
+    border-radius: 0.1em;
+    font-size: 83%;
+}
+
+pre {
+    /* Need !important to override style="" attribute */
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    padding: 0.2em 0.6em;
+    border-radius: 0.3em;
+    margin: 1em 0.05em;
+    line-height: 1.4em;
+    font-size: 80%;
+    white-space: pre;
+    overflow: auto;
+}
+
+blockquote {
+    border-left: 3px solid rgba(255, 255, 255, 0.15);
+    margin: 0 0.5em;
+    padding: 0 0.7em;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.73);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom-color: rgba(255, 255, 255, 0.75);
+}
+
+table, td, th {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 0.2em 0.5em;
+}
+
+th {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Layout */
+
+h1 {
+    margin-top: 1em;
+    margin-bottom: 0.67em;
+    clear: both;
+}
+
+h2, h3, h4, h5, h6, .content, p, blockquote, table, details, .box {
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+}
+
+.header {
+    margin: 1em 1em 2em 1em;
+}
+
+.footer {
+    margin: 3em 1em 2em 1em;
+    max-width: 600px;
+    font-size: 70%;
+    opacity: 0.6;
+    line-height: 1.3em;
+}
+
+.content {
+    max-width: 800px;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.date {
+    font-size: 95%;
+    font-style: italic;
+    line-height: 1.3em;
+    margin: -1.8em 0 0.5em 0;
+    float: right;
+}
+
+.box {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 0.3em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding: 0 1em;
+}
+
+.box.success {
+    border: 2px solid #1e991e;
+    background-color: #1e5e1e;
+}
+
+.box.info {
+    border: 2px solid #1e6699;
+    background-color: #1e435e;
+}
+
+.box.warning {
+    border: 2px solid #99661e;
+    background-color: #5e431e;
+}
+
+.box.error {
+    border: 2px solid #991e1e;
+    background-color: #5e1e1e;
+}
+
+.box.truncate {
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.box.link {
+    position: relative;
+}
+
+.box.link .link {
+    position: absolute;
+    border: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: background-color 0.2s ease;
+    opacity: 0.03;
+}
+
+.box.link .link:hover {
+    background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    color: #4ee94e;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #e94e4e;
+    font-weight: bold;
+}
+
+.source {
+    font-size: 80%;
+    line-height: 1.4em;
+}
+
+/* Gallery */
+
+.gallery {
+    width: 100%;
+}
+
+.gallery > div {
+    padding: 0;
+    margin: 0.4em;
+    position: relative;
+    float: left;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    line-height: 0;
+}
+
+.gallery > div > img {
+    width: 100%;
+    height: auto;
+    opacity: 0.15;
+    margin: 0;
+}
+
+.gallery > div > a {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: none;
+    z-index: 1;
+    color: #cfcfcf;
+}
+
+.gallery > div > a:hover {
+    color: #ffffff;
+}
+
+.gallery > div > a > span {
+    width: 100%;
+    position: absolute;
+    top: 55%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 160%;
+    line-height: 1.1em;
+}
+
+.gallery > br {
+    clear: left;
+}

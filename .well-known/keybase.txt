@@ -1,0 +1,53 @@
+https://keybase.io/jtai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.jtai.ca
+  * I am jtai (https://keybase.io/jtai) on keybase.
+  * I have a public key ASCj5HBBqZBkJr9U2DK_ph3GZKWM4C7GWfskFJTFjBLCago
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a3e47041a9906426bf54d832bfa61dc664a58ce02ec659fb241494c58c12c26a0a",
+      "host": "keybase.io",
+      "kid": "0120a3e47041a9906426bf54d832bfa61dc664a58ce02ec659fb241494c58c12c26a0a",
+      "uid": "b2ee3800b0b1f040bccb4ed5a1477719",
+      "username": "jtai"
+    },
+    "merkle_root": {
+      "ctime": 1577143073,
+      "hash": "669b92a234e17becf948643c79df713508c1b3859b32a0e38c16c355536a562e992a01ddb495f0f69cfc51eaced1bb648f382d264ecc3115d9d70b91a8941bb0",
+      "hash_meta": "a96827d183cec3cc027c279329285a1ea2a7e4debce6851d8ede2618ca528b68",
+      "seqno": 13925294
+    },
+    "service": {
+      "entropy": "VszOiua21ypCeUnaaBCxAO0l",
+      "hostname": "www.jtai.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.1.1"
+  },
+  "ctime": 1577143085,
+  "expire_in": 504576000,
+  "prev": "49968f93847af857587c86d36873bbfa471657ce2042e1d05adf5771b98c30b5",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgo+RwQamQZCa/VNgyv6YdxmSljOAuxln7JBSUxYwSwmoKp3BheWxvYWTESpcCCMQgSZaPk4R6+FdYfIbTaHO7+kcWV84gQuHQWt9XcbmMMLXEICrk2AoRd3nIxW485DDoGb/VLC/aBNToCGzI7kdOS4yIAgHCo3NpZ8RAvWHgbQF+qD7tqN7T/QzNleOxjYYhZZ8zw7+OnkEioF8kuwLGqFIdwZesDblCst5UNNeJ5tt2+pkJVEZR2nlsAKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJQ73qHggO1J2eOCrfdhcr7Wf09mXS7vaJE1hLGkyHUio3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jtai
